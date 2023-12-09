@@ -1,43 +1,27 @@
-
-
-/**
- * sub page containing specific selectors and methods for a specific page
- */
 class SignupPage {
-    
-    get emailInput () {
+
+    get emailInput() {
         return $('#email');
     }
 
-    get passwordInput () {
+    get passwordInput() {
         return $('#password');
     }
 
-    get usernameInput()
-    {
+    get usernameInput() {
         return $('#username');
     }
 
-    get btnSubmit () {
+    get btnSubmit() {
         return $('#submit_btn');
     }
-    get successMessage()
-    {
+    get successMessage() {
         return $('#success-message')
     }
-    get errorMessage()
-    {
+    get errorMessage() {
         return $('#error-message')
     }
 
-
-
-    
-
-    /**
-     * overwrite specific options to adapt it to page object
-     */
-    
 }
 
 module.exports = new SignupPage();
